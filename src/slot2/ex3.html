@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Grid & Nav</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+        body {
+            font-size: 0.95rem;
+        }
+        .banner-title {
+            font-size: 1.75rem; 
+            font-weight: 500; 
+            color: #212529;
+        }
+        .grid-container {
+            border: 1px solid #b0b0b0;
+            background-color: #dcdcdc;
+            padding: 0px;
+        }
+        .grid-box {
+            background-color: #e2e6ea;
+            border: 1px solid #b0b0b0;
+            padding: 9px 12px;
+            color: #212529;
+            font-weight: 400;
+        }
+        .footer-box {
+             background-color: #D2C5C5;
+            border: 1px solid #D2C5C5;
+            color: #212529;
+            font-weight: 600; 
+            font-size: 2.0rem;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4" style="max-width: 900px;">
+     
+
+        <!-- Banner -->
+        <div class="p-4 mb-3 bg-light border">
+            <h1 class="banner-title m-0">Let's test the grid!</h1>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav mb-3">
+            <li class="nav-item"><a class="nav-link active ps-0" href="#">Active</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+        </ul>
+
+        <!-- Grid Layout -->
+        <div class="grid-container mb-3">
+            <!-- Hàng 1: 2 cột (6 - 6) -->
+            <div class="row g-0">
+                <div class="col-6"><div class="grid-box">First col</div></div>
+                <div class="col-6"><div class="grid-box">Second col</div></div>
+            </div>
+
+            <!-- Hàng 2: 3 cột (3 - 6 - 3) -->
+            <div class="row g-0">
+                <div class="col-3"><div class="grid-box">col</div></div>
+                <div class="col-6"><div class="grid-box">col</div></div>
+                <div class="col-3"><div class="grid-box">col</div></div>
+            </div>
+
+            <!-- Hàng 3: 4 cột (3 - 3 - 3 - 3) -->
+            <div class="row g-0">
+                <div class="col-3"><div class="grid-box">col</div></div>
+                <div class="col-3"><div class="grid-box">col</div></div>
+                <div class="col-3"><div class="grid-box">col</div></div>
+                <div class="col-3"><div class="grid-box">col</div></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center footer-box py-2">
+            Created by ABC!
+        </div>
+    </div>
+</body>
+</html>
