@@ -50,7 +50,7 @@ function DemoState() {
 
   const changeAge = () => {
     setUser({
-      ...user,
+      ...user,//giữ nguyên thuộc tính khác 
       age: user.age + 2,
     });
   };
